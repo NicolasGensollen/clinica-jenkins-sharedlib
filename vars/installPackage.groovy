@@ -1,5 +1,4 @@
 def call() {
-	checkPoetry()
-	buildCondaEnv()
 	activateCondaEnv()
+	sh 'make install'
 }
