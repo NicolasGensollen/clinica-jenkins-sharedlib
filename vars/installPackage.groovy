@@ -1,4 +1,4 @@
 def call() {
-	activateCondaEnv()
-	sh 'make install'
+	loadLinuxScript(name: "install_package.sh")
+	sh "./install_package.sh"
 }
