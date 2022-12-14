@@ -1,5 +1,5 @@
 def call() {
-	checkPoetry()
+	checkCommand(name: "poetry")
 	buildCondaEnv()
 	activateCondaEnv()
 }
