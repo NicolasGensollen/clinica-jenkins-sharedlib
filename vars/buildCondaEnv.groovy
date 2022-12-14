@@ -1,5 +1,4 @@
 def call() {
-	sh 'source ${CONDA_HOME}/etc/profile.d/conda.sh'
-	checkCommand(name: "conda")
-	sh 'conda env create -p ${CONDA_ENV}'	
+	loadLinuxScript(name: "build_conda_env.sh")
+	sh "./build_conda_env.sh"
 }
