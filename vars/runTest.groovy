@@ -4,5 +4,5 @@ def call(Map config = [:]) {
 	} else if (config.os == "mac") {
 		loadMacScript(name: "run_test.sh")
 	}
-	sh "./run_test.sh ${config.name} ${config.n_jobs} ${config.junit}"
+	sh "./run_test.sh ${config.name} ${config.mark} ${config.n_jobs} ${config.junit}"
 }
