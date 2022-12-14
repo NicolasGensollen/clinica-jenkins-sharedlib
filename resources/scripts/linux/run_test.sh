@@ -9,6 +9,7 @@ poetry run pytest \
 	--verbose \
 	--working_directory=$WORK_DIR \
 	--input_data_directory=$INPUT_DATA_DIR \
+	--basetemp=$TMP_DIR \
 	--disable-warnings \
 	--timeout=0 \
 	-n $2 \
